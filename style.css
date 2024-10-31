@@ -1,0 +1,329 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+@font-face {
+    font-family: argaka;
+    src: url(ArgakaFashion-Regular.otf);
+  }
+@font-face {
+    font-family: aesthetic;
+    src: url(Aesthetic-Regular.ttf)
+}
+
+a:link {
+    text-decoration: none;
+  }  
+  a:visited {
+    text-decoration: none;
+  }  
+  a:hover {
+    text-decoration: none;
+  }  
+  a:active {
+    text-decoration: none;
+  }
+a:link {
+    color: rgb(0, 0, 0);
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+    a:hover {
+    color: rgb(84, 84, 84);
+  }  
+  a:active {
+    color: rgb(0, 0, 0);
+  }
+
+
+body {
+    
+        background-image: linear-gradient(to right, rgb(142, 142, 142), rgba(0, 0, 0, 0)), url(noise.svg); 
+        
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+#title {
+    font-family: argaka;
+    font-size: 3.5em;
+       
+}
+
+#title:hover {
+    font-size: 3.7em;
+}
+
+.navbar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+#navlink {
+    text-align: center; 
+    font-family: aesthetic;
+    font-size: 1.1em;    
+}
+
+#navlink:hover {
+    font-size: 1.15em;
+}
+
+/* GLOBAL */
+
+p1 {
+  font-family:monospace;
+}
+
+h1 {
+  font-family: aesthetic;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: aesthetic;
+  font-size: 1.15em;
+}
+
+/* LANDING PAGE */
+
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+#landingimg {
+  max-width: 100%;
+  height: auto;
+ 
+  border-radius: 12px;
+  margin-top: 80px;  
+  margin-bottom: 20px;
+  transition: 1s;
+  }
+
+#landingimg:hover {
+  filter: invert(20%)
+}
+
+
+
+/* MUSIC */
+
+
+.flex-container-music {
+
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+   
+    padding-top: 30px;
+    /* border: 1px, solid, black; */
+}
+
+.flex-item-music {
+    padding: 32px;
+    max-width: 100%;
+    height: 200px;
+    /* border: 1px, solid, black; */
+
+    position: relative;
+    overflow: hidden;
+    width:80%;
+  
+   
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }   
+    
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-item-music {
+    width:50%;
+  }
+}
+
+#bc-logo {
+  width:125px;
+  
+  /* border: 1px, solid, black; */
+}
+
+/* VIDEO */
+
+.flex-container-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+   /* padding-left: 50px;
+  padding-right: 50px;  */
+}
+
+.flex-item-video {
+  padding: 32px;
+  width: 550px;
+  
+
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 12px;
+}
+
+  /* TOUR */
+
+.tour-header, .tour-list {
+  display:block;
+  /* border: 1px,solid,black; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* MERCH */
+
+#merch-landing {
+  margin: 80px;
+  display: block;
+  text-align: center;
+}
+
+/* PRESS */
+
+/* pics */
+
+
+#pic-section-layout {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  /* border: 1px solid black; */
+}
+
+#flex-container-pics {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  /* border: 1px solid black; */
+}
+
+#flex-item-pic {
+  padding: 20px;
+  cursor:pointer;
+}
+
+.press-img {
+  width: 350px;
+  aspect-ratio: 1.51 / 1;
+  border-radius: 12px;
+  object-fit: cover;
+  
+}
+
+.press-img:hover {
+  filter: invert(10%)
+}
+
+
+/* text */
+
+#press-page {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+#press-item {
+  display: block;
+  text-align: center;
+}
+
+  /* CONTACT */
+
+
+.flex-container-contact {
+
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  /* border: 1px,solid,black; */
+ 
+}
+.flex-item-contact {
+  margin-top:50px;
+  text-align: center;
+  /* border: 1px,solid,black; */
+}
+
+span.email b {
+	display: none;
+}
+
+
+
+
+
+/* SOCIAL LINKS */
+
+.socialbar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+
+  /* border: 1px, solid, black; */
+}
+
+.social-icon {
+  height: 35px;
+  width: 35px;
+ 
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  /* border: 1px, solid, black; */
+}
+
+.social-icon:hover {
+  filter: opacity(75%);
+}
